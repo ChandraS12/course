@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 from PIL import Image
 from plotly.subplots import make_subplots
 st.set_page_config(layout="wide")
-DATA_URL='C:\\Users\\admin\\Desktop\\new_data.xlsx'
+DATA_URL='new_data.xlsx'
 #@st.cache(persist =True)
 def load_data():
 	data = pd.read_excel(DATA_URL)
@@ -117,7 +117,7 @@ st.plotly_chart(fig2)
 st.markdown("### Parameter Wise Score")
 
 #st.write(data3)
-data4='C:\\Users\\admin\\Desktop\\score_Data.xlsx'
+data4='score_Data.xlsx'
 def load_data():
     data5=pd.read_excel(data4)
     return data5
